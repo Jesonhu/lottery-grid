@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>抽奖-九宫格效果</title>
+  <style>
+    #wrap1 {
+      width: 500px;
+      height: 500px;
+      margin: 100px auto;
+      border:1px solid red;
+    }
+    .btn {
+      width: 33.333%;
+      height: 33.333%;
+      position: absolute;
+      z-index: 1;
+      background-color:red;
+      color:#fff;
+      text-align: center;
+      line-height: 100px;
+    }
+    .btn.s-disabled {
+      background-color:#d2c8c8;
+    }
+    #wrap1 img {
+      display: block;
+      width:100%;
+      height: auto;
+    }
+  </style>
+<link href="./lotteryGrid.css" rel="stylesheet"></head>
+<body>
+  <!-- 抽奖-九宫格组件 start -->
+  <div class="c-lottery-gride" id="wrap1">
+    <ul class="c-lottery-gride_list">
+      <li class="c-lottery-gride_item item c-lottery-gride_item1 " 
+        style="top:0;left:0;">
+        <img src="https://images.gitee.com/uploads/images/2019/0325/154449_4d1533c0_999438.jpeg" alt="">
+      </li>
+      <li class="c-lottery-gride_item c-lottery-gride_item2 item"
+        style="top:0;left:33.333%;">
+        <img src="https://images.gitee.com/uploads/images/2019/0325/154502_f2b3519d_999438.jpeg" alt="">
+      </li>
+      <li class="c-lottery-gride_item item"
+        style="top:0;left:66.666%;">
+        <img src="https://images.gitee.com/uploads/images/2019/0325/154513_fc2296bd_999438.jpeg" alt="">
+      </li>
+      <li class="c-lottery-gride_item item"
+        style="top:33.333%;left:0%;">
+        <img src="https://images.gitee.com/uploads/images/2019/0325/154502_f2b3519d_999438.jpeg" alt="">
+      </li>
+      <li class="c-lottery-gride_item item"
+        style="top:33.333%;left:66.666%;">
+        <img src="https://images.gitee.com/uploads/images/2019/0325/154513_fc2296bd_999438.jpeg" alt="">
+      </li>
+      <li class="c-lottery-gride_item item"
+        style="top:66.666%;left:0%;">
+        <img src="https://images.gitee.com/uploads/images/2019/0325/154449_4d1533c0_999438.jpeg" alt="">
+      </li>
+      <li class="c-lottery-gride_item item"
+        style="top:66.666%;left:33.333%;">
+        <img src="https://images.gitee.com/uploads/images/2019/0325/154502_f2b3519d_999438.jpeg" alt="">
+      </li>
+      <li class="c-lottery-gride_item item"
+        style="top:66.666%;left:66.666%;">
+        <img src="https://images.gitee.com/uploads/images/2019/0325/154449_4d1533c0_999438.jpeg" alt="">
+      </li>
+
+      <li class="btn"
+        style="top:33.333%;left:33.333%;">点击抽奖</li>
+    </ul>
+  </div>
+  <!-- 抽奖-九宫格组件 end -->
+<script type="text/javascript" src="./lotteryGrid.js"></script>
+
+<script src="./test.js"></script>
+</body>
+</html>
